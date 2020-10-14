@@ -46,11 +46,15 @@ Though most of the bridge dimensions are intuitive, these are shown on a sample 
 
 The lists defining the position and distribution of the loading areas (`LdL[]`, `WdL[]` and `WBf[]`) require further consideration. The loads are assumed to be applied over the ballast layer, in a distribution of concentrated areas/patches representing a reference vehicle (e.g. axle loads if the framework is railway traffic). To fully define the geometry around these patches, the following criteria need to be followed when defining those lists:
 
-* `LdL[]` is a list containing the X coordinates of each patch strip centreline, **sorted in descending order** (i.e. starting with the patch strip of greatest X and then continuing in direction -X; `[3000, 1000, -1000]` would be a valid example, whereas `[3000, -1000, 1000]` would raise an error).
-* etc
-* ect
+* `LdL[]` contains the X coordinates of each patch strip centreline, **sorted in descending order** (i.e. starting with the patch strip of greatest X and then continuing in direction -X; `{3000, 1000, -1000}` would be a valid example, whereas `{3000, -1000, 1000}` would raise an error).
+* `WdL[]` contains the width values (in X direction) of each patch strip, in the order corresponding to `LdL[]`.
+* `WBf[]` contains the width values (in Y direction) of each band (patch or inter-patch gap), sorted following +Y.
 
-The image below further illustrates these points:
+The image below further illustrates these points, for the specific lists defined in the example `bridge_3pans.geo`:
 
  <img src="https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge/blob/main/img/input_and_exe/geo-loading-patches.png" width=100% height=100%>
+
+The meshing input from within `bridge_3pans.geo` is also shown below:
+
+<img src="https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge/blob/main/img/input_and_exe/main-file-mesh-input.png" width=75% height=75%>
 

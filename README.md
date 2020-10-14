@@ -56,5 +56,5 @@ The image below further illustrates these points, for the specific lists defined
 
 The meshing input from within `bridge_3pans.geo` is also shown below:
 
-<img src="https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge/blob/main/img/input_and_exe/main-file-mesh-input.png" width=75% height=75%>
+<img src="https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge/blob/main/img/input_and_exe/main-file-mesh-input.png" width=85% height=85%>
 

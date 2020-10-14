@@ -31,5 +31,8 @@ These are schematically shown below, roughly corresponding to the self-weight gr
 
 Further details regarding the material groups and assignment of welf-weight can be found in ...
 
+## Input parameters and execution guidelines
 
 
+
+<img src="https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge/blob/main/img/input_and_exe/main-file-geometric-input.png" width=100% height=100%>

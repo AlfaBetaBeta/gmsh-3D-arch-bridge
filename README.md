@@ -29,3 +29,9 @@ These are schematically shown below, roughly corresponding to the self-weight gr
 
  <img src="https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge/blob/main/img/intro/3D-bridge-materials.png" width=100% height=100%>
 
+Further details regarding the material groups and assignment of welf-weight can be found in ...
+
+The coordinate system adopted throughout all macros is the orthonormal triplet XYZ as depicted below:
+
+<img src="https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge/blob/main/img/intro/3D-bridge-XYZ.png" width=100% height=100%>
+

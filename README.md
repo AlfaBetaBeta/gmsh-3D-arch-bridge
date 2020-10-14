@@ -40,6 +40,9 @@ There are **two main groups of input parameters** in the main `.geo` file: **geo
 
 <img src="https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge/blob/main/img/input_and_exe/main-file-geo-input.png" width=75% height=75%>
 
-Though most of the parameters are intuitive, these are shown on a sample mesh below for ease of interpretation.
+Though most of the bridge dimensions are intuitive, these are shown on a sample mesh below for ease of interpretation.
+
+<img src="https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge/blob/main/img/input_and_exe/geo-bridge-dimensions.png" width=100% height=100%>
+
 
 

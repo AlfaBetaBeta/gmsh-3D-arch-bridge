@@ -14,10 +14,10 @@
 // * BALLAST
 
 // NOTES:	* LOADS DEFINED ON TOP OF THE BACKFILL VIA A PREVIOUS MACRO
-//	  		* SYSTEM OF COORDINATES ASSUMED TO BE:
-//				X=0 ==> CENTRE OF MIDDLE SPAN
-//				Z=0 ==> BASE OF PIERS LEVEL
-//	  		* AS IT IS, THE CURRENT MACRO ASSUMES CONSTANT R/CLEAR SPAN.
+//	  	* SYSTEM OF COORDINATES ASSUMED TO BE:
+//			X=0 ==> CENTRE OF MIDDLE SPAN
+//			Z=0 ==> BASE OF PIERS LEVEL
+//	  	* AS IT IS, THE CURRENT MACRO ASSUMES CONSTANT R/CLEAR SPAN.
 //	    	  THIS CAN BE CHANGED BY RESORTING TO A DIFFERENT Initialiser MACRO
 
 Macro Bridge2D3Span
@@ -38,14 +38,14 @@ IN:		PH    = Pier height
 		WdL[] = List of widths for the spreading of each load
 
 		TL1   = Number of Points across the ring width
-       [TL2   = Number of Points along central portion of skewback/backing
+       	[TL2   = Number of Points along central portion of skewback/backing
 			    **may be omitted if skewbacks/backings have only 3 edges**]
 		TL3   = Number of Points along arch segment adjacent to backing
 		TL4   = Number of Points along arch segment adjacent to backfill
 		NLPr  = Number of layers in the Z direction when extruding the pier
-       [TL5   = **optional, omitted by default, see notes on macro BfUStr**]
+       	[TL5   = **optional, omitted by default, see notes on macro BfUStr**]
 
-OUT:	S_SK[] = List with Surfaces forming the skewbacks
+OUT:		S_SK[] = List with Surfaces forming the skewbacks
 		S_PR[] = List with Surfaces forming the piers
 		S_AR[] = List with Surfaces forming the arches
 		S_BK[] = List with Surfaces forming the backings

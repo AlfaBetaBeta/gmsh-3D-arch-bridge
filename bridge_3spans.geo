@@ -81,9 +81,9 @@ TL5    = 3;
 NLPr   = 15; // Number of layers along the pier height
 
 NLSp   = 1;	 // Number of layers along the Y-width of the spandrel walls
-NLPp   = 4;	 // Number of Z-layers in parapet starting from top of BALLAST
+NLPp   = 4;	 // Number of Z-layers in parapet starting from top of ballast
 
-NLEL   = 1;	 // Number of elmt layers along the thickness of the elastic layer
+NLEL   = 1;	 // Number of elmt layers along the thickness of the ballast layer
 
 NLBf[] = {1,1,1,1,2,1,1,1,1};	// Number of Y-layers per band
 LdBf[] = {0,1,0,1,0,1,0,1,0};	// Indicator of load for each Y-width band (0=not loaded; 1=loaded)

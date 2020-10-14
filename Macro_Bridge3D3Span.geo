@@ -39,13 +39,13 @@ IN:		WSp    	   = Width of the spandrel wall
 	
 		+ other args carried along from previous macros
 
-INOUT:	S_SK[] 	   = List with Surfaces forming the skewbacks (2D)]
+INOUT:		S_SK[] 	   = List with Surfaces forming the skewbacks (2D)]
 		S_PR[] 	   = List with Surfaces forming the piers (2D)]
 		S_AR[] 	   = List with Surfaces forming the arches (2D)]
 		S_BK[] 	   = List with Surfaces forming the backing 'area' (2D)]
 		S_BF[] 	   = List with Surfaces forming the backfill 'area' (2D)]
 
-OUT:	S_Yext[]   = List of ALL Surfaces at Y=WSp
+OUT:		S_Yext[]   = List of ALL Surfaces at Y=WSp
 		S_abtbk[]  = List of Surfaces at the backing 'abutments'
 		S_base[]   = List of Surfaces at the pier bases
 		S_abtarc[] = List of Surfaces at the arch 'abutments'

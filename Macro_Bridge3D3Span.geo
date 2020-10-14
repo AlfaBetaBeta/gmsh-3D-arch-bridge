@@ -9,16 +9,16 @@
 // MESH A 3-SPAN SEGMENT OF THE REFERENCE BRIDGE AS FULL 3D MODEL VIA Y-EXTRUSIONS (SPANDREL + INNER BULK + SPANDREL)
 
 // NOTES:	* XZ GEOMETRY AND LOADS DEFINED IN ANOTHER MACRO (Bridge2D3Span) WITH THE EXCEPTION OF THE PARAPET
-//			* THE ONLY GEOMETRIC PARAMETERS NEEDED HERE RELATE TO THE PARAPET OR THE Y-EXTRUSIONS.
-//			  ANY OTHER INPUT PARAMETER IS CARRIED ALONG FROM PREVIOUS MACROS 
-//			* THE PHYSICAL VOLUMES FOR MATERIAL GROUPS ARE ASSIGNED AS FOLLOWS
-//					g_msnr   = arches + hex.skewbacks + piers + parapet THROUGHOUT
-//					g_bkspdr = BACKING VOLUMES INSIDE SPANDREL WALLS
-//					g_bkbulk = BACKING VOLUMES BETWEEN SPANDREL WALLS
-//					g_bfspdr = BACKFILL VOLUMES INSIDE SPANDREL WALLS
-//					g_bfbulk = BACKFILL VOLUMES BETWEEN SPANDREL WALLS
-//					g_sk15   = wedge.skewbacks THROUGHOUT
-//					g_bllst  = BALLAST BETWEEN SPANDRELS
+//		* THE ONLY GEOMETRIC PARAMETERS NEEDED HERE RELATE TO THE PARAPET OR THE Y-EXTRUSIONS.
+//		  ANY OTHER INPUT PARAMETER IS CARRIED ALONG FROM PREVIOUS MACROS 
+//		* THE PHYSICAL VOLUMES FOR MATERIAL GROUPS ARE ASSIGNED AS FOLLOWS
+//				g_msnr   = arches + hex.skewbacks + piers + parapet THROUGHOUT
+//				g_bkspdr = BACKING VOLUMES INSIDE SPANDREL WALLS
+//				g_bkbulk = BACKING VOLUMES BETWEEN SPANDREL WALLS
+//				g_bfspdr = BACKFILL VOLUMES INSIDE SPANDREL WALLS
+//				g_bfbulk = BACKFILL VOLUMES BETWEEN SPANDREL WALLS
+//				g_sk15   = wedge.skewbacks THROUGHOUT
+//				g_bllst  = BALLAST BETWEEN SPANDRELS
 
 Macro Bridge3D3Span
 
@@ -30,7 +30,7 @@ IN:		WSp    	   = Width of the spandrel wall
 		NLPp   	   = Number of layers along HPp (in Z) upon discretisation
 
 		WBf[]  	   = List of width values of the successive internal extrusions along Y
-        NLBf[] 	   = Number of layers along Wbf[] (in Y) upon discretisation
+		NLBf[] 	   = Number of layers along Wbf[] (in Y) upon discretisation
 		LdBf[] 	   = List indicating which widths of WBf[] sustain load
 		             (==0 if not, !=0 if indeed)
 

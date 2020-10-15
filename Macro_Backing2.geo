@@ -16,9 +16,9 @@
 Macro Backing2
 
 /*
-IN:		Lbk1[] 		= List of (transfinite) Lines in edge salient arch - backing
-		Lbk2[] 		= List of (transfinite) Lines in edge incoming arch - backing
-		TL3    		= Number of Points on transfinite curved edges Lbk1[], Lbk2[]
+IN:		Lbk1[] 		  = List of (transfinite) Lines in edge salient arch - backing
+		Lbk2[] 		  = List of (transfinite) Lines in edge incoming arch - backing
+		TL3    		  = Number of Points on transfinite curved edges Lbk1[], Lbk2[]
 	
 OUT: 		dzL[]	          = Aux list with Z intervals between p001 and p003
 		dx1L[]	          = Aux list with X intervals between p001 and p003

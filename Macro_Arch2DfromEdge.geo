@@ -13,7 +13,7 @@
 //	(2) ARCH SEGMENT ADJACENT TO BACKFILL (CENTRAL)
 //	(3) ARCH SEGMENT ADJACENT TO BACKING
 
-// NOTES:  * IT IS ASSUMED THAT THE BACKING NEVER GETS PAST THE ARCH (EXTRADOS) CROWN
+// NOTES:  	* IT IS ASSUMED THAT THE BACKING NEVER GETS PAST THE ARCH (EXTRADOS) CROWN
 //	       * THE BACKING HEIGHT IS ASSUMED TO BE THE SAME AT BOTH ENDS OF THE ARCH
 
 Macro Arch2DfromEdge
@@ -28,7 +28,7 @@ IN:		L[]      = List of (transfinite) Lines connecting p001 and p003
 		TL3      = Number of points to make arch segments adjacent to backing transfinite
 		TL4      = Number of points to make arch segment adjacent to backfill transfinite
 
-OUT: 	A_x1     = X-shift of Point p003 wrt p001
+OUT: 		A_x1     = X-shift of Point p003 wrt p001
 		A_z      = Z-shift of Point p003 wrt p001
 		p[]	     = Aux list
 		p001	 = Starting Point of the first Line in L[]

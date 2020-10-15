@@ -31,7 +31,7 @@ IN:		p001  	= Starting point of given coordinates
 		TL2   	= Number of points to make central horizontal edges transfinite
 		      	  (TL2 may be omitted if L_x2 is set to zero)
 
-OUT: 		dx1		= Width of vertical layers along L_x1
+OUT: 		dx1	= Width of vertical layers along L_x1
 		dx2	= Width of vertical layers along L_x2
 		dx3	= Width of vertical layers along L_x3
 		dz	= Height of horizontal layers

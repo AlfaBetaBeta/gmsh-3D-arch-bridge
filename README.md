@@ -8,7 +8,7 @@ This repository contains a set of macros to generate a 3D Finite Element macrosc
     * [Meshing](https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge#meshing)
     * Macros
 * Execution guidelines
-* Further caveats
+* Caveats and limitations
 
 ## Introduction
 
@@ -81,5 +81,5 @@ As can be seen from all images above, the mesh in the spandrels' region adjacent
 
 The definition of Physical Entities (Surfaces/Volumes) is entirely done in `Macro_Bridge3D3Span.geo`, in the block shown below:
 
-<img src="https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge/blob/main/img/input_and_exe/physical-entities.png" width=60% height=60%>
+<img src="https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge/blob/main/img/input_and_exe/physical-entities.png" width=75% height=75%>
 

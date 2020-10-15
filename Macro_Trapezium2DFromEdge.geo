@@ -23,22 +23,22 @@ IN:		L3[]  	 = List of (transfinite) Lines connecting p001 and p003
 		L_x2  	 = X-shift of Points p004 & p005 wrt p001 (may be zero)
 		L_x3  	 = X-shift of Point p006 wrt p004 & p005 (may be zero)
 		TL2   	 = Number of points to make central horizontal edges transfinite
-				   (TL2 may be omitted if L_x2 is set to zero)
+			(TL2 may be omitted if L_x2 is set to zero)
 		TL1   	 = Number of points to make side edges transfinite
-				   (coincides with #L3[] but can be retrieved globally)
+			(coincides with #L3[] but can be retrieved globally)
 
-OUT: 	L_x1     = X-shift of Point p003 wrt p001
+OUT: 		L_x1     = X-shift of Point p003 wrt p001
 		L_z      = Z-shift of (p002,p003,p005,p006) wrt p001
 		
 		p001	 = Starting Point of the first Line in L3[]
 		p003	 = Ending Point of the last Line in L3[]
-		p[]	 	 = Aux list
+		p[]	 = Aux list
 		xyz001[] = Coordinates of Point p001
 		xyz003[] = Coordinates of Point p003
-		dx1	 	 = Width of vertical layers along L_x1
-		dx2	 	 = Width of vertical layers along L_x2
-		dx3	 	 = Width of vertical layers along L_x3
-		dz	 	 = Height of horizontal layers
+		dx1	 = Width of vertical layers along L_x1
+		dx2	 = Width of vertical layers along L_x2
+		dx3	 = Width of vertical layers along L_x3
+		dz	 = Height of horizontal layers
 		pS[]	 = Aux list 
 		pEt[]	 = Aux list
 		pE_1[]   = Aux list
@@ -54,13 +54,13 @@ OUT: 	L_x1     = X-shift of Point p003 wrt p001
 		S1[]	 = List with all surfaces embedded in triangle p001-p002-p003
 		S2[]	 = List with all surfaces embedded in rectangle p001-p002-p005-p004
 		S3[]	 = List with all surfaces embedded in triangle p004-p005-p006
-      	step	 = Index variable moving along layers in Z-direction
+		step	 = Index variable moving along layers in Z-direction
 		sub1	 = Index variable moving along layers in X-direction
 		ext[]	 = Aux list for extrusion
-		L	 	 = Aux variable for Line definition
-		sf	 	 = Aux variable, surface counter
-		LL	 	 = Aux variable for Line Loop definition
-		S	 	 = Aux variable for Plane Surface definition
+		L	 = Aux variable for Line definition
+		sf	 = Aux variable, surface counter
+		LL	 = Aux variable for Line Loop definition
+		S	 = Aux variable for Plane Surface definition
 */
 
 // INITIALISE VARIABLES AND LISTS

@@ -77,7 +77,7 @@ OUT:		S_Yext[]   = List of ALL Surfaces at Y=WSp
 */
 //------------------------------------------------------------------------------
 // INITIALISE Surface LISTS FOR THE SIDES (Y=0 & Y=total.width)
-S_Ymin[] = Surface "*"; // << All these Surfaces already exist via macro Brdg2D3Sp
+S_Ymin[] = Surface "*"; // << All these Surfaces already exist via macro Bridge2D3Span
 S_Ymax[] = {};
 
 // INITIALISE Surface/Volume LISTS FOR ALL EXTRUSIONS, TO BE UPDATED STAGEWISE

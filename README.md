@@ -1,12 +1,13 @@
 # Generation of a macroscale multi-span bridge FE mesh
 
-This repository contains a set of macros to generate a 3D Finite Element macroscale mesh of a 3-span arch bridge, via the free meshing tool [gmsh](https://gmsh.info). The main features of the macros and their execution guidelines can be found in the sections below:
+This repository contains a set of macros to generate a 3D Finite Element macroscale mesh of a 3-span arch bridge, via the free meshing tool [gmsh](https://gmsh.info). The main features of the macros, as well as their input parameters and execution guidelines can be found in the sections below:
 
 * [Introduction](https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge#introduction)
 * [Input parameters](https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge#input-parameters):
     * [Geometry](https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge#geometry)
     * [Meshing](https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge#meshing)
-* Etc
+* Execution guidelines
+* Further caveats
 
 ## Introduction
 

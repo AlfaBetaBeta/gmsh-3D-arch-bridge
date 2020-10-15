@@ -15,8 +15,8 @@
 Macro Bridge3D3SpanInnerBulk
 
 /*
-IN:    		[WBf[]  = List of width values of the successive internal extrusions along Y]
-       		[NLBf[] = Number of layers along Wbf[] (in Y) upon discretisation]
+IN:    		[WBf[]    = List of width values of the successive internal extrusions along Y]
+       		[NLBf[]   = Number of layers along Wbf[] (in Y) upon discretisation]
 	
 		+ other args carried along from previous macros
 

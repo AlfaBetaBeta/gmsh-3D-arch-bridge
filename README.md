@@ -6,6 +6,7 @@ This repository contains a set of macros to generate a 3D Finite Element macrosc
 * [Input parameters](https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge#input-parameters):
     * [Geometry](https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge#geometry)
     * [Meshing](https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge#meshing)
+    * Macros
 * Execution guidelines
 * Further caveats
 
@@ -70,7 +71,15 @@ Most of the meshing parameters are sufficiently intuitive or can be inferred wit
 * `NLBf[]` defines the discretisation along Y with regards to the bands defined in `WBf[]`, i.e. `NLBf[i]` determines the number of layers in which band `i` (of Y-width `WBf[i]`) must be discretised.
 * `LdBf[]` is also in correspondence with `WBf[]` and `NLBf[]`, and it specifies which band actually contains loading patches (value `1`) and which band contains inter-patch gaps (value `0`). The truthy value `1` can be replaced by any nonzero value, though it is recommended to use `1` to reflect more intuitively the binary purpose of this list.
 
-As can be seen from the images above, the mesh in the spandrels' region adjacent to the backfill is unstructured by default, which leaves parameter `TL5` unused and it can therefore be omitted in such cases. If a structured mesh with hexahedrons is required in that region, then a few lines in `Macro_BackfillUnstructured.geo` need to be uncommented (as is indicated in that file). An example of this fully structured meshing is shown below as a longitudinal section at Y = *constant*, where the ballast layer has been omitted for simplicity and the meaning of `TL5` has been indicated explicitly.
+### Macros
+
+In principle, the `Macro_*.geo` files can be left as is to start invoking them (although the user can hack them at their convenience if they are familiar with gmsh syntax). There are, however, two macros that the user might find useful to edit depending on their needs. Future revisions will centralise everything in the main `.geo` file, but for now the editable macros are explained hereafter.
+
+As can be seen from all images above, the mesh in the spandrels' region adjacent to the backfill is unstructured by default, which leaves parameter `TL5` unused and it can therefore be omitted in such cases. If a structured mesh with hexahedrons is required in that region, then a few lines in `Macro_BackfillUnstructured.geo` need to be uncommented (as is indicated in that file). An example of this fully structured meshing is shown below as a longitudinal section at Y = *constant*, where the ballast layer has been omitted for simplicity and the meaning of `TL5` has been indicated explicitly.
 
 <img src="https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge/blob/main/img/input_and_exe/2D-strip-structured.png" width=100% height=100%>
+
+The definition of Physical Entities (Surfaces/Volumes) is entirely done in `Macro_Bridge3D3Span.geo`, in the block shown below:
+
+<img src="https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge/blob/main/img/input_and_exe/physical-entities.png" width=60% height=60%>
 

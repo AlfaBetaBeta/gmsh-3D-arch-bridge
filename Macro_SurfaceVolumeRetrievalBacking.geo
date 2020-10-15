@@ -20,9 +20,9 @@ INOUT:		V_BK[]     = List of ALL Volumes forming the backings in the current ext
 OUT:		S_Yext[]   = List of all Surfaces at Y>0 (with Y = width of extrusion)
 		             (Reset and updated here with the backings contribution)
 		aux3	   = Number of elements in 1 layer of each triangular part of
-			         the backing
+			     the backing
 		aux2bk	   = Number of elements in 1 layer of the central (rectangular)
-			         part of the backing should it be present
+			     part of the backing should it be present
 
 		+ other aux variables
 */

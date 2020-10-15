@@ -20,8 +20,8 @@
 Macro Backing1
 
 /*
-IN:		Lbk2[] 		= List of (transfinite) Lines in edge incoming arch - backing
-		TL3    		= Number of Points on transfinite curved edge Lbk2[]
+IN:		Lbk2[] 		  = List of (transfinite) Lines in edge incoming arch - backing
+		TL3    		  = Number of Points on transfinite curved edge Lbk2[]
 	
 OUT:		dzL[]	          = Aux list with Z intervals between p001 and p003
 		dx3L[]	          = Aux list with X intervals between p004 and p006
@@ -38,11 +38,11 @@ OUT:		dzL[]	          = Aux list with Z intervals between p001 and p003
 		step, sub1	  = Aux variables for loop iteration
 		ext[]		  = Aux list for iterative extrusion
 		pE_1[]		  = Aux Point list
-		sf		    = AUx variable for loop iteration
-		LL 		    = Aux variables for Line Loop definition
-		S		    = Aux variables for Plane Surface definition
-		lyr		    = Aux variables for loop iteration
-		Li		    = Aux variables for loop iteration
+		sf		  = AUx variable for loop iteration
+		LL 		  = Aux variables for Line Loop definition
+		S		  = Aux variables for Plane Surface definition
+		lyr		  = Aux variables for loop iteration
+		Li		  = Aux variables for loop iteration
 */
 
 // INITIALISE VARIABLES AND LISTS

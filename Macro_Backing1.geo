@@ -10,39 +10,39 @@
 // BACKING DEFINED IN THE XZ PLANE (Y=0), STARTING FROM A CIRCULAR ARCH EDGE AND WITHOUT SKEWBACK HORIZONTAL EDGE OR THE SYMMETRIC CIRCULAR EDGE
 
 // NOTES:	* THE 1 EDGE MUST EXIST, I.E. THE INPUT LIST MUST BE NON-EMPTY
-//			* CASES WITH 2 OR 3 EDGES ARE TREATED ON SEPARATE MACROS
-//			* TL3 IS NORMALLY INHERITED FROM PREVIOUS MACROS
-//			* IT IS ASSUMED THAT THE BACKFILL IS BUILT FROM THE EDGE OF
-//			  AN INCOMING ARCH, AS THIS WILL NORMALLY BE THE CASE IN MORE
-//			  GLOBAL MACROS BUILDING THE ENTIRE BRIDGE. IF THE ARCH IS
-//			  SALIENT, ADJUSTMENTS MUST BE MADE TO Lbk2[]
+//		* CASES WITH 2 OR 3 EDGES ARE TREATED ON SEPARATE MACROS
+//		* TL3 IS NORMALLY INHERITED FROM PREVIOUS MACROS
+//		* IT IS ASSUMED THAT THE BACKFILL IS BUILT FROM THE EDGE OF
+//		  AN INCOMING ARCH, AS THIS WILL NORMALLY BE THE CASE IN MORE
+//		  GLOBAL MACROS BUILDING THE ENTIRE BRIDGE. IF THE ARCH IS
+//		  SALIENT, ADJUSTMENTS MUST BE MADE TO Lbk2[]
 
 Macro Backing1
 
 /*
-IN:		Lbk2[] 			  = List of (transfinite) Lines in edge incoming arch - backing
-		TL3    			  = Number of Points on transfinite curved edge Lbk2[]
+IN:		Lbk2[] 		= List of (transfinite) Lines in edge incoming arch - backing
+		TL3    		= Number of Points on transfinite curved edge Lbk2[]
 	
-OUT: 	dzL[]	          = Aux list with Z intervals between p001 and p003
+OUT:		dzL[]	          = Aux list with Z intervals between p001 and p003
 		dx3L[]	          = Aux list with X intervals between p004 and p006
 		p004, xyz004[]    = Corner Point and its coordinates
 		p006, xyz006[]    = Corner Point and its coordinates
-		L	              = Aux variable for Line definition
-		p[]	              = Aux Point list
+		L	          = Aux variable for Line definition
+		p[]	          = Aux Point list
 		xyzS[], xyzE[]    = Aux Point coordinates list
 		pS[], pEt[], pE[] = Aux Point lists
-		Lbk1[]		      = Line list (edge opposite to circular arch)
-		Lbk4_3[] 	      = Line list (top edge)
+		Lbk1[]		  = Line list (edge opposite to circular arch)
+		Lbk4_3[] 	  = Line list (top edge)
 		LS[], LE[], Li[]  = Aux Line lists during loop iteration 
 		SB3[] 	          = List with Surfaces forming the backing
-		step, sub1	      = Aux variables for loop iteration
-		ext[]		      = Aux list for iterative extrusion
-		pE_1[]		      = Aux Point list
-		sf		          = AUx variable for loop iteration
-		LL 		          = Aux variables for Line Loop definition
-		S		          = Aux variables for Plane Surface definition
-		lyr		          = Aux variables for loop iteration
-		Li		          = Aux variables for loop iteration
+		step, sub1	  = Aux variables for loop iteration
+		ext[]		  = Aux list for iterative extrusion
+		pE_1[]		  = Aux Point list
+		sf		    = AUx variable for loop iteration
+		LL 		    = Aux variables for Line Loop definition
+		S		    = Aux variables for Plane Surface definition
+		lyr		    = Aux variables for loop iteration
+		Li		    = Aux variables for loop iteration
 */
 
 // INITIALISE VARIABLES AND LISTS

@@ -23,9 +23,9 @@ IN:		L3[]  	 = List of (transfinite) Lines connecting p001 and p003
 		L_x2  	 = X-shift of Points p004 & p005 wrt p001 (may be zero)
 		L_x3  	 = X-shift of Point p006 wrt p004 & p005 (may be zero)
 		TL2   	 = Number of points to make central horizontal edges transfinite
-			(TL2 may be omitted if L_x2 is set to zero)
+			   (TL2 may be omitted if L_x2 is set to zero)
 		TL1   	 = Number of points to make side edges transfinite
-			(coincides with #L3[] but can be retrieved globally)
+			   (coincides with #L3[] but can be retrieved globally)
 
 OUT: 		L_x1     = X-shift of Point p003 wrt p001
 		L_z      = Z-shift of (p002,p003,p005,p006) wrt p001

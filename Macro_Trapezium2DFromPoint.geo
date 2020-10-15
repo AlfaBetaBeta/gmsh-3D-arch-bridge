@@ -31,10 +31,10 @@ IN:		p001  	= Starting point of given coordinates
 		TL2   	= Number of points to make central horizontal edges transfinite
 		      	  (TL2 may be omitted if L_x2 is set to zero)
 
-OUT: 	dx1		= Width of vertical layers along L_x1
-		dx2		= Width of vertical layers along L_x2
-		dx3		= Width of vertical layers along L_x3
-		dz		= Height of horizontal layers
+OUT: 		dx1		= Width of vertical layers along L_x1
+		dx2	= Width of vertical layers along L_x2
+		dx3	= Width of vertical layers along L_x3
+		dz	= Height of horizontal layers
 		pS[]	= Aux list 
 		pE[]	= Aux list
 		L1[]	= List with Points forming edge p004-p006
@@ -50,13 +50,13 @@ OUT: 	dx1		= Width of vertical layers along L_x1
 		S1[]	= List with all surfaces embedded in triangle p001-p002-p003
 		S2[]	= List with all surfaces embedded in rectangle p001-p002-p005-p004
 		S3[]	= List with all surfaces embedded in triangle p004-p005-p006
-      	step	= Index variable moving along layers in Z-direction
+		step	= Index variable moving along layers in Z-direction
 		sub1	= Index variable moving along layers in X-direction
 		ext[]	= Aux list for extrusion
-		L		= Aux variable for Line definition
-		sf		= Aux variable, surface counter
-		LL		= Aux variable for Line Loop definition
-		S		= Aux variable for Plane Surface definition
+		L	= Aux variable for Line definition
+		sf	= Aux variable, surface counter
+		LL	= Aux variable for Line Loop definition
+		S	= Aux variable for Plane Surface definition
 */
 
 // INITIALISE VARIABLES AND LISTS

@@ -104,6 +104,11 @@ $ gmsh -3 -part 6 bridge_3spans.geo
 ```
 should it be necessary to partition the mesh (say in 6 in this case).
 
+## Caveats and limitations
 
+* 2D enough to play around with meshing parameters
+* change macros to generate tt10 is ok if there is no connection with crack plugin ultimately.
+* s2in surfaces and connection with the other repo.
+* these macros should work with newest gmsh, but crack plugin does not.
 
 

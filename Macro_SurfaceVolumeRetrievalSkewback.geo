@@ -15,7 +15,7 @@ Macro SurfaceVolumeRetrievalSkewback
 /*
 IN:		*args from previous macros
 
-INOUT:	S_Yext[]   = List of all Surfaces at Y>0 (with Y = width of extrusion)
+INOUT:		S_Yext[]   = List of all Surfaces at Y>0 (with Y = width of extrusion)
 		    	     (updated here with the skewbacks contribution)
 		V_SK[]     = List of ALL Volumes forming the skewbacks in the current extrusion
 		V_SK20[]   = List of WEDGE Volumes forming the skewbacks in the current extrusion

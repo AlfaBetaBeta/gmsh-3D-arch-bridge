@@ -6,8 +6,8 @@ This repository contains a set of macros to generate a 3D Finite Element macrosc
 * [Input parameters](https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge#input-parameters):
     * [Geometry](https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge#geometry)
     * [Meshing](https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge#meshing)
-    * Macros
-* Execution guidelines
+    * [Macros](https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge#macros)
+* [Execution guidelines](https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge#execution-guidelines)
 * Caveats and limitations
 
 ## Introduction
@@ -83,7 +83,27 @@ The definition of Physical Entities (Surfaces/Volumes) is entirely done in `Macr
 
 <img src="https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge/blob/main/img/input_and_exe/physical-entities.png" width=90% height=90%>
 
-The meaning of each Surface/Volume list is explained in the heading of that file. The strings labelling each Physical Entity are in general strongly FE engine dependent and in this case they encode information (material group, self-weight, bounday conditions, ect) by complying with certain syntax rules. If the user needs a different syntax for the labels, these strings can be changed without restrictions. Any Physical Entity can even be omitted altogether if the user does not need it or has their own tool to transform the resulting `.msh` file into a suitable input file for the FE engine. In any case, the Physical Entities or theor labels are not needed for the macros to work properly.
+The meaning of each Surface/Volume list is explained in the heading of that file. The strings labelling each Physical Entity are in general strongly FE engine dependent and in this case they encode information (material group, self-weight, bounday conditions, ect) by complying with certain syntax rules. If the user needs a different syntax for the labels, these strings can be changed without restrictions. Any Physical Entity can even be omitted altogether if the user does not need it or has their own tool to transform the resulting `.msh` file into a suitable input file for the FE engine. In any case, the Physical Entities or their labels are not needed for the macros to work properly.
 
 ## Execution guidelines
+
+Once all necessary [input parameters](https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge#input-parameters) have been specified by the user, the execution of the macros from the main `.geo` file can be done via GUI or CLI. For the example included here, these options would be:
+
+* GUI:
+    * Open `bridge_3spans.geo` from gmsh and then press `0` to read the file.
+    * To execute the 3D meshing after reading the script, press `3`.
+    * The resulting `.msh` file can be saved locally and might be necessary as input for further generative/analysis tools.
+
+* CLI:
+```
+$ gmsh -3 bridge_3spans.geo
+```
+or
+```
+$ gmsh -3 -part 6 bridge_3spans.geo
+```
+should it be necessary to partition the mesh (say in 6 in this case).
+
+
+
 

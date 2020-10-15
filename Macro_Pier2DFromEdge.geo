@@ -14,7 +14,7 @@ IN:		PL[]  = List of Lines forming the base of the skewback
 		PH    = Pier height
 		NLPr  = Number of layers in the Z direction when extruding PL[]
 
-OUT: 	ext[] = Aux list for extrusion
+OUT: 		ext[] = Aux list for extrusion
 		SP[]  = List of surfaces forming the pier
 */
 

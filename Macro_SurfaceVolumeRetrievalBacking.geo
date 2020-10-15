@@ -14,10 +14,10 @@ Macro SurfaceVolumeRetrievalBacking
 /*
 IN:		*args from previous macros
 
-INOUT:	V_BK[]     = List of ALL Volumes forming the backings in the current extrusion
+INOUT:		V_BK[]     = List of ALL Volumes forming the backings in the current extrusion
 		S_abtbk[]  = List of Surfaces at the backing 'abutments' along the current extrusion
 
-OUT:	S_Yext[]   = List of all Surfaces at Y>0 (with Y = width of extrusion)
+OUT:		S_Yext[]   = List of all Surfaces at Y>0 (with Y = width of extrusion)
 		             (Reset and updated here with the backings contribution)
 		aux3	   = Number of elements in 1 layer of each triangular part of
 			         the backing

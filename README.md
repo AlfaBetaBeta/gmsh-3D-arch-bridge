@@ -34,11 +34,11 @@ These are schematically shown below, roughly corresponding to the self-weight gr
 
  <img src="https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge/blob/main/img/intro/3D-bridge-materials.png" width=100% height=100%>
 
-Further details regarding the material groups and assignment of welf-weight can be found in ...
+Further details regarding the material groups and assignment of welf-weight can be found in the [section about editable macros](https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge#macros).
 
 ## Input parameters
 
-All the `.geo` files containing macros are named as the macro they embed, prepended by `Macro_`. The main `.geo` file actually calling the macros is the one meant to be edited by the user, in this case `bridge_3pans.geo`, though the naming of this file is arbitrary. (Exception for physical groups?). There are **two main groups of input parameters** in the main `.geo` file: **geometry** and **meshing** parameters.
+All the `.geo` files containing macros are named as the macro they embed, prepended by `Macro_`. The main `.geo` file actually calling the macros is the one meant to be edited by the user, in this case `bridge_3pans.geo`, though the naming of this file is arbitrary (in certain cases, some macros may need to be edited by the user as well, this is explained in [this section](https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge#macros)). There are **two main groups of input parameters** in the main `.geo` file: **geometry** and **meshing** parameters.
 
 ### Geometry
 

@@ -106,9 +106,6 @@ should it be necessary to partition the mesh (say in 6 in this case).
 
 ## Caveats and limitations
 
-* 2D enough to play around with meshing parameters
-* change macros to generate tt10 is ok if there is no connection with crack plugin ultimately.
-* s2in surfaces and connection with the other repo.
-* these macros should work with newest gmsh, but crack plugin does not.
-
-
+* Reading the main `.geo` file as indicated above can take some time depending on the machine and the meshing parameters. If the main aim is for the user to experiment with the input parameters to graphically check their influence, it might be convenient to comment out `Call Bridge3D3Span` in the main `.geo` file. This just generates a 2D strip in the XZ plane, and it does so very quickly. While this does not allow inspecting the effect of parameters in the Y direction, it is a quick hack useful for the majority of input parameters.
+* The Physical Surfaces `g_*2*` and `s2in` in `Macro_Bridge3D3Span.geo` are meant to be transformed into crack or interface planes, that is the sole reason why these Physical Entities are created. If this is of interest, please refer to [this repository's plugin](https://github.com/AlfaBetaBeta/gmsh-crack-generator#gmsh-plugin-for-crack-generation-in-3d-fe-meshes) to see how to transform these surfaces into cracks (only the `.msh` file resulting from the macros execution would be necessary). Resorting to the crack plugin in its current form, however, precludes the use of 10-noded tetrahedrons, hence the recommendation not to change the default element types in the macros. If inserting crack/interface planes is not necessary, then the aforementioned Physical Surfaces can be dispensed with, and the macros can be hacked to generate tetrahedrons without further consequence.
+* The macros in this repository should work even with the newest version of gmsh, but bear in mind that the [crack plugin](https://github.com/AlfaBetaBeta/gmsh-crack-generator#gmsh-plugin-for-crack-generation-in-3d-fe-meshes) does not. Please refer to the [caveats on that repository](https://github.com/AlfaBetaBeta/gmsh-crack-generator#caveats-and-shortcomings) to adjust the format of the `.msh` file if the pipeline includes the crack plugin.

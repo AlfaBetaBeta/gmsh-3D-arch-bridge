@@ -81,5 +81,9 @@ As can be seen from all images above, the mesh in the spandrels' region adjacent
 
 The definition of Physical Entities (Surfaces/Volumes) is entirely done in `Macro_Bridge3D3Span.geo`, in the block shown below:
 
-<img src="https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge/blob/main/img/input_and_exe/physical-entities.png" width=75% height=75%>
+<img src="https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge/blob/main/img/input_and_exe/physical-entities.png" width=90% height=90%>
+
+The meaning of each Surface/Volume list is explained in the heading of that file. The strings labelling each Physical Entity are in general strongly FE engine dependent and in this case they encode information (material group, self-weight, bounday conditions, ect) by complying with certain syntax rules. If the user needs a different syntax for the labels, these strings can be changed without restrictions. Any Physical Entity can even be omitted altogether if the user does not need it or has their own tool to transform the resulting `.msh` file into a suitable input file for the FE engine. In any case, the Physical Entities or theor labels are not needed for the macros to work properly.
+
+## Execution guidelines
 

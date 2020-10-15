@@ -61,7 +61,7 @@ OUT:		S_Yext[]   = List of ALL Surfaces at Y=WSp
 		V_AR[]	   = List of Volumes forming forming the arches
 		V_BF[]	   = List of Volumes forming the backfill
 		V_PP[]	   = List of Volumes forming the parapet
-		V_EL[]	   = List of Volumes forming the elastic layer
+		V_EL[]	   = List of Volumes forming the elastic layer (ballast)
 
 		extBK[]	   = List with all entities arising from extrusion of backings
 		extPR[]	   = List with all entities arising from extrusion of piers

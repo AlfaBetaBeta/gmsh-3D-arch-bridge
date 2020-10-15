@@ -17,7 +17,7 @@ The spatial FE mesh comprises solely quadratic incomplete (serendipitous) solid 
 
 Although other element types (e.g. 10-noded tetrahedron, [gmsh type 11](https://gmsh.info/doc/texinfo/gmsh.html#MSH-file-format)) could easily be accommodated with minor changes in some macros, it is convenient to work with the default types above for consistency with other potential functionalities (see caveats link).
 
-An example mesh resulting from invoking the generative macros can be seen below, where colour encoding reflects materials with different self-weight. The coordinate system adopted throughout all macros is the orthonormal triplet XYZ and it is also shown for reference.
+An example mesh resulting from invoking the generative macros can be seen below, where colour encoding reflects materials with different self-weight (i.e. assigned to different Physical Volumes). The coordinate system adopted throughout all macros is the orthonormal triplet XYZ and it is also shown for reference.
 
 <img src="https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge/blob/main/img/intro/3D-bridge-XYZ.png" width=100% height=100%>
 

@@ -10,20 +10,20 @@
 // MESH A SPANDREL WALL ON EACH CALL OF THIS MACRO, VIA Y-EXTRUSION(S)
 
 // NOTES:	* XZ GEOMETRY AND LOADS DEFINED IN ANOTHER MACRO (Bridge2D3Span) WITH THE
-//            EXCEPTION OF THE PARAPET, DEFINED IN Bridge3D3Span
-//	  		* ALL INPUT PARAMETERS NEEDED HERE ARE CARRIED ALONG FROM  PREVIOUS MACROS 
+//		  EXCEPTION OF THE PARAPET, DEFINED IN Bridge3D3Span
+//		* ALL INPUT PARAMETERS NEEDED HERE ARE CARRIED ALONG FROM  PREVIOUS MACROS 
 
 Macro Bridge3D3SpanSpandrels
 
 /*
-IN:    [WSp        = Width of the spandrel wall]
-       [NLSp       = Number of layers along WSp (in Y) upon discretisation]
-       [HPp        = Height of the parapet, measured from the top of the backfill]
-       [NLPp       = Number of layers along HPp (in Z) upon discretisation]
+IN:    		[WSp        = Width of the spandrel wall]
+       		[NLSp       = Number of layers along WSp (in Y) upon discretisation]
+       		[HPp        = Height of the parapet, measured from the top of the backfill]
+       		[NLPp       = Number of layers along HPp (in Z) upon discretisation]
 	
 		+ other args carried along from previous macros
 
-INOUT:	S_Yext[]   = List of ALL Surfaces at Y=WSp
+INOUT:		S_Yext[]   = List of ALL Surfaces at Y=WSp
 		S_abtbk[]  = List of Surfaces at the backing 'abutments'
 		S_base[]   = List of Surfaces at the pier bases
 		S_abtarc[] = List of Surfaces at the arch 'abutments'
@@ -45,7 +45,7 @@ INOUT:	S_Yext[]   = List of ALL Surfaces at Y=WSp
 		S_BK[]     = List with Surfaces forming the backing 'area' (2D)]
 		S_BF[]     = List with Surfaces forming the backfill 'area' (2D)]
 
-OUT: 	extBK[]	   = List with all entities arising from extrusion of backings
+OUT: 		extBK[]	   = List with all entities arising from extrusion of backings
 		extPR[]	   = List with all entities arising from extrusion of piers
 		extSK[]	   = List with all entities arising from extrusion of skewbacks
 		extAR[]	   = List with all entities arising from extrusion of arches

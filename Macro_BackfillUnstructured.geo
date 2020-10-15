@@ -11,16 +11,16 @@
 // BACKFILL DEFINED IN THE XZ PLANE (Y=0), WITH BOTTOM EDGES FORMED BY ARCHES AND SKEWBACK Line LISTS STEMMING FROM PREVIOUSLY EXECUTED MACROS
 
 // NOTES:	* LdL[] AND WdL[] LISTS MUST HAVE THE SAME LENGTH
-//			* A ZERO WIDTH IN WdL[] DOES NOT CAUSE ERROR BY EXTRUSION BUT
-//			  SHOULD BE AVOIDED AS THE ALLOCATION OF POINTS IN THE LINES
-//	     	  BETWEEN LOAD STRIPS ASSUMES ALL WIDTHS TO BE FINITE
-//	   		* TL2, TL3 AND TL4 WILL NORMALLY BE INHERITED FROM PREVIOUSLY
-//	     	  EXECUTED MACROS
-//	   		* IT IS ASSUMED THAT THERE IS ALWAYS A NONZERO DISTANCE BETWEEN
-//	     	  p003/p004 AND THE FIRST/LAST LOAD STRIP, I.E. THE FIRST AND
-//	     	  LAST LINES STORED IN Lbf[] ARE NOT LOAD STRIPS!
-//	   		* ALSO, THE DISTANCE BETWEEN LOAD STRIPS HAS TO BE FINITE, I.E.
-//	     	  THERE ARE (#Lbf[]-1) LINES CONNECTING THE (#Lbf[]) LOAD STRIPS
+//		* A ZERO WIDTH IN WdL[] DOES NOT CAUSE ERROR BY EXTRUSION BUT
+//		  SHOULD BE AVOIDED AS THE ALLOCATION OF POINTS IN THE LINES
+//		  BETWEEN LOAD STRIPS ASSUMES ALL WIDTHS TO BE FINITE
+//		* TL2, TL3 AND TL4 WILL NORMALLY BE INHERITED FROM PREVIOUSLY
+//		  EXECUTED MACROS
+//		* IT IS ASSUMED THAT THERE IS ALWAYS A NONZERO DISTANCE BETWEEN
+//		  p003/p004 AND THE FIRST/LAST LOAD STRIP, I.E. THE FIRST AND
+//		  LAST LINES STORED IN Lbf[] ARE NOT LOAD STRIPS!
+//		* ALSO, THE DISTANCE BETWEEN LOAD STRIPS HAS TO BE FINITE, I.E.
+//		  THERE ARE (#Lbf[]-1) LINES CONNECTING THE (#Lbf[]) LOAD STRIPS
 
 /* WARNING:
 
@@ -40,17 +40,17 @@ Macro BackfillUnstructured
 
 /*
 IN:		Lbkarc[]      = List of top edge Lines of backing and arches
-		Hbf	          = Height of the backfill layer measured from the backing
+		Hbf	        = Height of the backfill layer measured from the backing
 		LdL[]	      = List of X coordinates of the load centres
 			            (from p003 along negative X direction)
 		WdL[]	      = List of widths for the spreading of each load
-		TL5	          = Number of Points to make side Lines LbfE and LbfW transfinite
-			            (See important note above)
-		TL2	          = Number of Points along top edge of backing (rectangle)
-		TL3	          = Number of Points along top edge of backing (triangle(s))
-		TL4	          = Number of Points along top edge of arch (between backings)
+		TL5	        = Number of Points to make side Lines LbfE and LbfW transfinite
+			          (See important note above)
+		TL2	        = Number of Points along top edge of backing (rectangle)
+		TL3	        = Number of Points along top edge of backing (triangle(s))
+		TL4	        = Number of Points along top edge of arch (between backings)
 
-OUT:	p[]	          = Aux Point list
+OUT:		p[]	          = Aux Point list
 		p001 ... p004 = Corner Points
 		xyz001[]      = Coordinates of Point p001
 		xyz003[]      = Coordinates of Point p003

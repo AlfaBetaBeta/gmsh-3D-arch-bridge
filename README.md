@@ -3,7 +3,7 @@
 This repository contains a set of macros to generate a 3D Finite Element macroscale mesh of a 3-span arch bridge, via the free meshing tool [gmsh](https://gmsh.info). The main features of the macros and their execution guidelines can be found in the sections below:
 
 * [Introduction](https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge#introduction)
-* [Input parameters and execution guidelines](https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge#input-parameters-and-execution-guidelines)
+* Etc
 * Etc
 
 ## Introduction
@@ -32,11 +32,13 @@ These are schematically shown below, roughly corresponding to the self-weight gr
 
 Further details regarding the material groups and assignment of welf-weight can be found in ...
 
-## Input parameters and execution guidelines
+## Input parameters
 
-All the `.geo` files containing macros are named as the macro they embed, prepended by `Macro_`. The main `.geo` file actually calling the macros is the one meant to be edited by the user, in this case `bridge_3pans.geo`, though the naming of this file is arbitrary. (Exception for physical groups?)
+All the `.geo` files containing macros are named as the macro they embed, prepended by `Macro_`. The main `.geo` file actually calling the macros is the one meant to be edited by the user, in this case `bridge_3pans.geo`, though the naming of this file is arbitrary. (Exception for physical groups?). There are **two main groups of input parameters** in the main `.geo` file: **geometry** and **meshing** parameters.
 
-There are **two main groups of input parameters** in the main `.geo` file: **geometry** and **meshing** parameters. An example of geometric input from within `bridge_3pans.geo` is shown below:
+### Geometry
+
+An example of geometric input from within `bridge_3pans.geo` is shown below:
 
 <img src="https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge/blob/main/img/input_and_exe/main-file-geo-input.png" width=75% height=75%>
 
@@ -54,7 +56,9 @@ The image below further illustrates these points, for the specific lists defined
 
  <img src="https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge/blob/main/img/input_and_exe/geo-loading-patches.png" width=100% height=100%>
 
-The meshing input from within `bridge_3pans.geo` is also shown below:
+### Meshing
+
+The sample meshing input from within `bridge_3pans.geo` is also shown below:
 
 <img src="https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge/blob/main/img/input_and_exe/main-file-mesh-input.png" width=90% height=90%>
 
@@ -62,4 +66,8 @@ Most of the meshing parameters are sufficiently intuitive or can be inferred wit
 
 * `NLBf[]` defines the discretisation along Y with regards to the bands defined in `WBf[]`, i.e. `NLBf[i]` determines the number of layers in which band `i` (of Y-width `WBf[i]`) must be discretised.
 * `LdBf[]` is also in correspondence with `WBf[]` and `NLBf[]`, and it specifies which band actually contains loading patches (value `1`) and which band contains inter-patch gaps (value `0`). The truthy value `1` can be replaced by any nonzero value, though it is recommended to use `1` to reflect more intuitively the binary purpose of this list.
+
+As can be seen from the images above, the mesh in the spandrels' region adjacent to the backfill is unstructured by default, which leaves parameter `TL5` unused and it can therefore be omitted in such cases. If a structured mesh with hexahedrons is required in that region, then a few lines in `Macro_BackfillUnstructured.geo` need to be uncommented (as is indicated in that file). An example of this fully structured meshing is shown below as a longitudinal section at Y = *constant*, where the ballast layer has been omitted for simplicity.
+
+<img src="https://github.com/AlfaBetaBeta/gmsh-3D-arch-bridge/blob/main/img/input_and_exe/2D-strip-structured.png" width=100% height=100%>
 

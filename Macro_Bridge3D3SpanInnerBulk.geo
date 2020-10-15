@@ -15,10 +15,10 @@
 Macro Bridge3D3SpanInnerBulk
 
 /*
-IN:    		[WBf[]  	   = List of width values of the successive internal extrusions along Y]
-       		[NLBf[] 	   = Number of layers along Wbf[] (in Y) upon discretisation]
+IN:    		[WBf[]  = List of width values of the successive internal extrusions along Y]
+       		[NLBf[] = Number of layers along Wbf[] (in Y) upon discretisation]
 	
-			+ other args carried along from previous macros
+		+ other args carried along from previous macros
 
 INOUT:		S_Yext[]   = List of ALL Surfaces at Y=WBf[0]+...+WBf[#WBf[]-1]
 		S_abtbk[]  = List of Surfaces at the backing 'abutments'

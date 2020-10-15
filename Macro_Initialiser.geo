@@ -11,9 +11,9 @@
 // NOTES:	* IT IS ASSUMED THAT ALL SPANS ARE IDENTICAL, THAT IS, THE
 //	    	  CLEAR SPAN, ARCH RISE AND THICKNESS ARE CONSTANT, WHICH
 //	    	  ALSO ENTAILS THAT THE SKEWBACKS ARE SYMMETRIC (L_x1 = -L_x3)
-//	  		* BY DEFAULT L_x2 IS SET TO ZERO IF THE PIERS ARE TOO THIN, AND
+//	  	* BY DEFAULT L_x2 IS SET TO ZERO IF THE PIERS ARE TOO THIN, AND
 //	    	  PWd0 IS USED INSTEAD, CONSIDERING 3 EDGED SKEWBACKS/BACKINGS
-//	  		* OTHERWISE L_x2 IS SET TO THE APPROPRIATE FINITE VALUE, AND
+//	  	* OTHERWISE L_x2 IS SET TO THE APPROPRIATE FINITE VALUE, AND
 //	    	  ALL 4 EDGES ARE CONSIDERED IN THE SKEWBACKS/BACKINGS
 
 Macro Initialiser
@@ -23,9 +23,9 @@ IN:		CSp   = Clear span
 		ARs   = Arch rise
 		Th    = Arch thickness
 
-INOUT:	PWd   = X-width of the piers (may be changed here, depending on PWd0)
+INOUT:		PWd   = X-width of the piers (may be changed here, depending on PWd0)
 
-OUT: 	R     = Arch radius (centre to intrados)
+OUT: 		R     = Arch radius (centre to intrados)
 		L_x1  = 
 		L_x2  = 
 		L_x3  = 

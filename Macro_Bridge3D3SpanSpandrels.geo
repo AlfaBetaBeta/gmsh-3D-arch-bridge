@@ -16,10 +16,10 @@
 Macro Bridge3D3SpanSpandrels
 
 /*
-IN:    		[WSp        = Width of the spandrel wall]
-       		[NLSp       = Number of layers along WSp (in Y) upon discretisation]
-       		[HPp        = Height of the parapet, measured from the top of the backfill]
-       		[NLPp       = Number of layers along HPp (in Z) upon discretisation]
+IN:    		[WSp       = Width of the spandrel wall]
+       		[NLSp      = Number of layers along WSp (in Y) upon discretisation]
+       		[HPp       = Height of the parapet, measured from the top of the backfill]
+       		[NLPp      = Number of layers along HPp (in Z) upon discretisation]
 	
 		+ other args carried along from previous macros
 
